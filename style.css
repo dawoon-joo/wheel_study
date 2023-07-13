@@ -1,1 +1,45 @@
 *{padding: 0; margin: 0; list-style: none; box-sizing: border-box;}
+a{text-decoration: none; color: #000;}
+/* =============================================================== */
+
+/* header */
+header {width: 100%; height: 100px; padding: 0 20px; background-color: #fff; height: 100px; transition:all 0.3s; overflow: hidden;}
+header .inner{width: 1180px; height: 100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+header .logo{font-size: 24px;}
+header .gnb {display: flex; text-align: center; height: 100%;}
+header .gnb > li{height: 100%; position: relative; display: flex; align-items: center;}
+header .gnb li a{display: block; font-size: 18px; padding: 10px 0; width: 100px;}
+header .gnb .depth{opacity: 0; width: 100%; height: 190px; position: absolute; top: 100%; left: 0; background:transparent;  visibility:hidden;}
+header .gnb .depth ul{display: flex; flex-direction: column;}
+header .gnb li.on {background-color: #fff;}
+header .gnb .depth.on{background: #fff; color: #222;}
+header .gnb .depth.on a{ color: #222;}
+header .gnb li.on a{color: #222;}
+header.on {height: 290px; background-color: #222;}
+header.on .logo{color: #fff;}
+header.on::after{content: ''; display: block; width: 100%; height: 1px; background: #f8f9fb; position: absolute; top: 100px; z-index: 10;}
+header.on li {background-color: transparent;}
+header.on li a{color: #fff;}
+header.on .depth{opacity: 1; visibility: visible; opacity: 1;}
+
+/* figure */
+figure{width: 100%; height: calc(100vh - 72px); background-color: antiquewhite;}
+
+/* section01 */
+.section01{padding:200px 20px 100px; height: 100vh; position: relative;}
+.section01 .inner{width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+.section01 .inner .true_point{position: absolute; top: 100px; left: 50%; transform: translateX(-50%);   width: 0; height: 0; border-top: 80px solid skyblue; border-left: 30px solid transparent; border-right: 30px solid transparent;}
+.section01 .inner .wheel_boxs{position: relative; width: 500px; height: 500px; border-radius: 50%; border: 1px solid pink; margin-bottom: 100px;}
+.section01 .inner .wheel_boxs .line{width: 100%; height: 1px; background: pink; position: absolute; top: 50%; transform: translateY(-50%);}
+.section01 .inner .wheel_boxs .line1{transform: rotate(60deg);}
+.section01 .inner .wheel_boxs .line2{transform: rotate(120deg);}
+.section01 .inner .wheel_boxs .line3{transform: rotate(180deg);}
+.section01 .inner .wheel_boxs .txt {position: absolute; top: 0; left: 0; font-size: 34px;}
+.section01 .inner .wheel_boxs .txt1{top: 60px;left: 240px;}
+.section01 .inner .wheel_boxs .txt2{top: 140px;left: 380px;transform: rotate(60deg);}
+.section01 .inner .wheel_boxs .txt3{top: 300px;left: 370px;transform: rotate(120deg);}
+.section01 .inner .wheel_boxs .txt4{top: 380px;left: 240px;transform: rotate(180deg);}
+.section01 .inner .wheel_boxs .txt5{top: 300px;left: 110px;transform: rotate(240deg);}
+.section01 .inner .wheel_boxs .txt6{top: 150px;left: 100px;transform: rotate(300deg);}
+.section01 .inner .wheel_btns{width: 100%; display: flex; justify-content: center; gap: 30px;}
+.section01 .inner .wheel_btns button{width: 100px; height: 80px; background-color: pink; cursor: pointer;}
